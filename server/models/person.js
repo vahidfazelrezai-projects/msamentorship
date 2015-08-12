@@ -1,12 +1,11 @@
 var mongoose = require('mongoose');
 
 var personSchema = mongoose.Schema({
-    name: String,
-    type: String,
-    phone: String,
+    firstname: String,
+    lastname: String,
     email: String,
-    school: String,
-    year: String
+    phone: String,
+    school: String
 });
 
 module.exports = mongoose.model('Person', personSchema);

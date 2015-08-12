@@ -3,17 +3,20 @@ var personController = {};
 var Person = require('../models/person');
 
 personController.newperson = function (req, res) {
-
-    var someone = Person({
-        name: 'hii',
+    
+    var person = Person({
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
+        email: req.body.email,
+        phone: req.body.phone,
+        school: req.body.school
     });
 
-    // save the user
-    someone.save(function(err) {
-      if (err) throw err;
-
-      console.log('someone created!');
+    person.save(function(err) {
+        if (err) throw err;
     });
+
+    res.send('new person added');
 
 };
 

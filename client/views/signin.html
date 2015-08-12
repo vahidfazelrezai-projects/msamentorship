@@ -1,1 +1,48 @@
-signin
+<div class="signin-container">
+    <div class="signin-header">
+        <h1>Sign in here!</h1>
+    </div>
+
+    <form class="signin-form card">
+        <div class="card-content">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="firstname" type="text" ng-model="person.firstname" class="validate">
+                    <label for="firstname">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="lastname" type="text" ng-model="person.lastname" class="validate">
+                    <label for="lastname">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="text" ng-model="person.email">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="phone" type="text" ng-model="person.phone">
+                    <label for="phone">Phone</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="school" type="text" ng-model="person.school">
+                    <label for="school">School/Organization</label>
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn-large waves-effect waves-light signin-button activator" ng-click="submit()">Submit</button>
+            </div>
+        </div>
+        <div class="card-reveal">
+            <br>
+            <span class="card-title grey-text">Click here to go back</span>
+            <br>
+            <b>You're all set {{ firstname }}!<b>
+        </span>
+        </div>
+    </form>
+</div>
