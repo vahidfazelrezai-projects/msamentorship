@@ -5,11 +5,11 @@ angular.module('msamentorshipApp').controller("signinController", function ($sco
 
     function resetPerson() {
         $scope.person = {
-            firstname: '',
-            lastname: '',
-            email: '',
-            phone: '',
-            school: ''
+            firstname: null,
+            lastname: null,
+            email: null,
+            phone: null,
+            school: null
         };
     }
 

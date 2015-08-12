@@ -25,7 +25,7 @@ app.engine('html', function(path, options, callback) {
 // MIDDLEWARE //
 app.use(morgan('dev')); // logger
 app.use(express.static(__dirname + '/client')); // set static folder
-app.use(favicon(__dirname + '/client/assets/favicon.ico')); // favicon
+app.use(favicon(__dirname + '/client/assets/img/favicon.ico')); // favicon
 app.use(bodyParser.json()); // parse json
 app.use(bodyParser.urlencoded({ extended: true })); // parse forms
 app.use('/', index); // index routes
