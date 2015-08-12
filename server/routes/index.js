@@ -1,7 +1,9 @@
 var router = require('express').Router();
-var returnIndex = require('../controllers/returnIndex');
-var Person = require('../models/person')
 
-router.get('/', returnIndex);
+var viewController = require('../controllers/viewController');
+var personController = require('../controllers/personController');
+
+router.get('/', viewController.index);
+router.get('/test', personController.test);
 
 module.exports = router;

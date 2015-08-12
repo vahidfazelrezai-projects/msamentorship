@@ -1,6 +1,4 @@
 var mongoose = require('mongoose');
-// var configDatabase = require('../config/database')
-// mongoose.createConnection(configDatabase.uri)
 
 var personSchema = mongoose.Schema({
     name: String

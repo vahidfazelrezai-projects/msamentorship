@@ -1,7 +1,9 @@
+var viewController = {}
+
 var path = require('path');
 
-function returnIndex (req, res) {
+viewController.index = function (req, res) {
     res.sendFile(path.join(__dirname, '../../client/views/index.html'));
 };
 
-module.exports = returnIndex;
+module.exports = viewController;
