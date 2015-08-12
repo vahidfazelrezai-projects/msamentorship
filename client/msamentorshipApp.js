@@ -12,6 +12,10 @@ angular.module('msamentorshipApp', ['ngRoute'])
 	        	templateUrl: '/views/signin.html',
 	        	controller: 'signinController'
 	    	})
+			.when('/clicker', {
+	        	templateUrl: '/views/clicker.html',
+	        	controller: 'clickerController'
+	    	})
 		    .otherwise({
 		        redirectTo: '/'
 		    });

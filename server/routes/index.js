@@ -1,7 +1,7 @@
 var router = require('express').Router();
 
-var viewController = require('../controllers/viewController');
-var personController = require('../controllers/personController');
+var viewController = require('../controllers/view-controller');
+var personController = require('../controllers/person-controller');
 
 router.post('/newperson', personController.newperson);
 router.get('/*', viewController.index);
