@@ -1,6 +1,6 @@
 var personController = {};
 
-var Person = require('../models/Person');
+var Person = require('../models/person');
 
 personController.newperson = function (req, res) {
 
