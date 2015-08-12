@@ -4,7 +4,7 @@ angular.module('msamentorshipApp', ['ngRoute'])
 .config(['$routeProvider', '$locationProvider',
 	function($routeProvider, $locationProvider) {
 	    $routeProvider
-		.when('/', {
+			.when('/', {
 	        templateUrl: '/views/splash.html',
 	        controller: 'splashController'
 	    })
