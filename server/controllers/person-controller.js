@@ -20,4 +20,17 @@ personController.newperson = function (req, res) {
 
 };
 
+personController.allfirstnames = function (req, res) {
+    
+    Person.find({}, 'firstname', function (err, people) {
+        if (err) throw err;
+        names = [];
+        for (i = 0; i < people.length; i++) {
+            names.push(people[i]['firstname']);
+        }
+        res.send(names);
+    })
+
+};
+
 module.exports = personController;
