@@ -17,15 +17,24 @@ body {
 
 .splash-banner {
     margin: auto;
-    padding-top: 50px;
-    width: 60%;
+    padding-top: 30px;
+    width: 50%;
 }
 
 .splash-display {
     width: 100%;
-    padding-top: 150px;
     text-align: center;
-    font-size: 60px;
+}
+
+.splash-display-text {
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.splash-display-video {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 
